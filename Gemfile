@@ -3,9 +3,10 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 gem "sinatra"
-gem "padrino-core", "~> 0.13.0.beta1"
+gem "padrino-core", ">= 0.13.0"
 gem "rspec", ">= 2.0"
 gem "rack-test", ">= 0"
+gem "activesupport", ">= 4"
 
 platform :mri_18 do
   gem 'pry'
@@ -14,7 +15,8 @@ end
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
-  gem "padrino-helpers", "~> 0.13.0.beta1"
+  gem "activesupport", ">= 4"
+  gem "padrino-helpers", ">= 0.13.0"
   gem 'rdoc'
   gem "bundler"
   gem "jeweler", "~> 1.6.4"

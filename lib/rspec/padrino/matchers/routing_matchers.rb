@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'padrino-core'
+require 'active_support/all'
 # defining Proc#source_location
 require 'pry' if RUBY_VERSION < '1.9'
 
